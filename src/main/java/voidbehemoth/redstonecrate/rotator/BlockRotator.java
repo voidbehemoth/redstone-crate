@@ -103,14 +103,15 @@ public class BlockRotator extends Block {
 
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
         if (!worldIn.isRemote) {
-            this.doRotate(worldIn, pos);
-
+            this.doRotate(worldIn, pos, state);
         }
     }
 
-    public void doRotate(World world, BlockPos pos) {
+    public void doRotate(World world, BlockPos pos, IBlockState state) {
         EnumFacing newFacing = UP;
         rotateBlock(world, pos, newFacing);
+        EnumFacing direction = (EnumFacing)state.getValue(FACING);
+        System.out.println("Rotator is currently facing the block at " + pos.offset(direction));
     }
 
     static {
