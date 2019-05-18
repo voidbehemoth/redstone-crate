@@ -1,0 +1,15 @@
+[
+{
+  "modid": "redstonecrate",
+  "name": "Redstone Crate",
+  "description": "A much-needed redstone expansion mod for a new era.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["VoidBehemoth"],
+  "credits": "VoidBehemoth",
+  "logoFile": "",
+  "screenshots": []
+}
+]

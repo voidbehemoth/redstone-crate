@@ -1,0 +1,30 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube",
+    "textures": {
+      "north": "redstonecrate:blocks/rotator",
+      "south": "redstonecrate:blocks/rotator-non-front",
+      "west": "redstonecrate:blocks/rotator-non-front",
+      "east": "redstonecrate:blocks/rotator-non-front",
+      "down": "redstonecrate:blocks/rotator-non-front",
+      "up": "redstonecrate:blocks/rotator-non-front"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "facing": {
+      "north": {},
+      "south": {"y": 180},
+      "west": {"y": 270},
+      "east": {"y": 90},
+      "up": {"x": -90},
+      "down": {"x": 90}
+    },
+    "triggered": {
+      "false": {},
+      "true": {}
+    }
+  }
+}
