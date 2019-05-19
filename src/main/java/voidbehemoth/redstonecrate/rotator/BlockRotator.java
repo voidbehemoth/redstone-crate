@@ -88,6 +88,7 @@ public class BlockRotator extends Block {
             worldIn.setBlockState(pos, state.withProperty(TRIGGERED, true), 4);
         } else if (!powered && triggered) {
             worldIn.setBlockState(pos, state.withProperty(TRIGGERED, false), 4);
+
         }
     }
 

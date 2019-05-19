@@ -1,6 +1,7 @@
 package voidbehemoth.redstonecrate;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSponge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
