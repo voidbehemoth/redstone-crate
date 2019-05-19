@@ -75,16 +75,6 @@ public class BlockRotator extends Block {
         return i;
     }
 
-    //@Override
-    //public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-    //    return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
-    //}
-
-    //@Overri
-    //public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
-    //    super.onBlockAdded(worldIn, pos, state);
-    //}
-
     public int tickRate(World worldIn) {
         return 4;
     }
@@ -108,10 +98,8 @@ public class BlockRotator extends Block {
     }
 
     public void doRotate(World world, BlockPos pos, IBlockState state) {
-        EnumFacing newFacing = UP;
-        rotateBlock(world, pos, newFacing);
         EnumFacing direction = (EnumFacing)state.getValue(FACING);
-        System.out.println("Rotator is currently facing the block at " + pos.offset(direction));
+        rotateBlock(world, pos.offset(direction), direction);
     }
 
     static {
